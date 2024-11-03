@@ -12,6 +12,8 @@ const validate =
       });
     } catch (error: any) {
       res.status(400).send(error.errors);
-      return
+      return;
     }
   };
+
+export default validate;
